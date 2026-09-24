@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:16-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: load_testing_metrics_db
+      POSTGRES_USER: load_testing_metrics_user
+      POSTGRES_PASSWORD: load_testing_metrics_password
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}" ]
+      retries: 5
+      timeout: 3s
+      interval: 5s
+
+  api:
+    image: nikitafilonov/load-testing-hub-api:latest
+    ports: [ "13000:13000" ]
+    env_file: [ .env.load-testing-hub ]
+    depends_on:
+      migrator:
+        condition: service_completed_successfully
+
+  panel:
+    image: nikitafilonov/load-testing-hub-panel:latest
+    ports: [ "13100:13100" ]
+    env_file: [ .env.load-testing-hub ]
+
+  migrator:
+    image: nikitafilonov/load-testing-hub-api:latest
+    command: alembic upgrade head
+    env_file: [ .env.load-testing-hub ]
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+
+  

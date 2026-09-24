@@ -1,0 +1,14 @@
+api_url: http://localhost:13000
+service:
+  id: 1
+scenario:
+  id: 6
+  name: "new user get documents"
+  file: "tests/http/gateway/new_user_get_documents/v1.conf"
+  version: "v1"
+  number_of_users: 100
+  runtime_duration: "1m"
+csv_locust_stats_file: "tests/http/gateway/new_user_get_documents/result_stats.csv"
+json_locust_ratio_file: "tests/http/gateway/new_user_get_documents/result_ratio.json"
+csv_locust_exceptions_file: "tests/http/gateway/new_user_get_documents/result_exceptions.csv"
+csv_locust_stats_history_file: "tests/http/gateway/new_user_get_documents/result_stats_history.csv"

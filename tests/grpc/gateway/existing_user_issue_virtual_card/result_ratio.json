@@ -1,0 +1,38 @@
+{
+  "per_class": {
+    "IssueVirtualCardScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "IssueVirtualCardTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.8333333333333334
+            },
+            "issue_virtual_card": {
+              "ratio": 0.16666666666666666
+            }
+          }
+        }
+      }
+    }
+  },
+  "total": {
+    "IssueVirtualCardScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "IssueVirtualCardTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.8333333333333334
+            },
+            "issue_virtual_card": {
+              "ratio": 0.16666666666666666
+            }
+          }
+        }
+      }
+    }
+  }
+}

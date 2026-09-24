@@ -1,0 +1,44 @@
+{
+  "per_class": {
+    "GetOperationsScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "GetOperationsTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.14285714285714285
+            },
+            "get_operations": {
+              "ratio": 0.5714285714285714
+            },
+            "get_operations_summary": {
+              "ratio": 0.2857142857142857
+            }
+          }
+        }
+      }
+    }
+  },
+  "total": {
+    "GetOperationsScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "GetOperationsTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.14285714285714285
+            },
+            "get_operations": {
+              "ratio": 0.5714285714285714
+            },
+            "get_operations_summary": {
+              "ratio": 0.2857142857142857
+            }
+          }
+        }
+      }
+    }
+  }
+}

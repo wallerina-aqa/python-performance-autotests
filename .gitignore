@@ -1,0 +1,17 @@
+# PyCharm
+.idea/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db

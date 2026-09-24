@@ -1,0 +1,50 @@
+{
+  "per_class": {
+    "MakePurchaseOperationScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "MakePurchaseOperationTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "make_purchase_operation": {
+              "ratio": 0.14285714285714285
+            },
+            "get_accounts": {
+              "ratio": 0.2857142857142857
+            },
+            "get_operations": {
+              "ratio": 0.2857142857142857
+            },
+            "get_operations_summary": {
+              "ratio": 0.2857142857142857
+            }
+          }
+        }
+      }
+    }
+  },
+  "total": {
+    "MakePurchaseOperationScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "MakePurchaseOperationTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "make_purchase_operation": {
+              "ratio": 0.14285714285714285
+            },
+            "get_accounts": {
+              "ratio": 0.2857142857142857
+            },
+            "get_operations": {
+              "ratio": 0.2857142857142857
+            },
+            "get_operations_summary": {
+              "ratio": 0.2857142857142857
+            }
+          }
+        }
+      }
+    }
+  }
+}

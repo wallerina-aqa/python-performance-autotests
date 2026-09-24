@@ -1,0 +1,44 @@
+{
+  "per_class": {
+    "GetDocumentsScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "GetDocumentsTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.2
+            },
+            "get_tariff_document": {
+              "ratio": 0.4
+            },
+            "get_contract_document": {
+              "ratio": 0.4
+            }
+          }
+        }
+      }
+    }
+  },
+  "total": {
+    "GetDocumentsScenarioUser": {
+      "ratio": 1.0,
+      "tasks": {
+        "GetDocumentsTaskSet": {
+          "ratio": 1.0,
+          "tasks": {
+            "get_accounts": {
+              "ratio": 0.2
+            },
+            "get_tariff_document": {
+              "ratio": 0.4
+            },
+            "get_contract_document": {
+              "ratio": 0.4
+            }
+          }
+        }
+      }
+    }
+  }
+}
